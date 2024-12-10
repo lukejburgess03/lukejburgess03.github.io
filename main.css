@@ -1,52 +1,76 @@
+/* Body Styling */
 body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0px auto;
-  padding: 10px;
+    font-family: "Georgia", serif; /* More appropriate for articles, classic serif */
+    line-height: 1.6; /* For readability */
+    margin: 0;
+    padding: 0;
+    max-width: 960px; /* A common width for news articles */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.source-info {
-  background-color: darkgray;
-  font-size: 18px;
-  margin: 0px 0px 15px 0px;
-  border: black solid 2px;
-  padding: 10px;
-}
-
-img {
-  width: 100%;
-}
-
-.lead-caption {
-  font-size: 14px;
-  margin: 5px 0px;
-  line-height: 14px;
-}
-
-h1 {
-  font-style: italic;
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
+/* Paragraph Styling */
 p {
-  font-size: 20px;
-  line-height: 26px;
+    font-family: "Georgia", serif; /* Matches classic news site font */
+    font-size: 18px; /* More standard readable font size */
+    color: #333; /* Dark gray for better contrast */
+    margin-bottom: 1.5em; /* Space between paragraphs */
 }
 
-.other-image {
-  max-width: 600px;
-  display: block;
-  margin: 30px auto 5px auto;
+/* Header Font (for article title) */
+.headerfont {
+    font-family: "Georgia", serif; /* Classic serif font for headings */
+    font-weight: bold;
+    font-size: 36px; /* Larger font for the header */
+    color: #000; /* Standard black color for article title */
+    margin-bottom: 20px; /* Space below the header */
 }
 
-.other-caption {
-  font-size: 14px;
-  line-height: 14px;
-  max-width: 600px;
-  margin: 5px auto;
+/* Article Subheadings */
+h2, h3 {
+    font-family: "Georgia", serif;
+    font-size: 24px; /* Slightly smaller than the main header */
+    font-weight: bold;
+    margin-top: 20px;
+    color: #222;
+}
+
+/* Clean, minimalistic border styling for divs */
+div {
+    border: none; /* Remove the solid black border, more typical of news sites */
+}
+
+/* Fixing the typo in your font family and size for paragraphs */
+p {
+    font-family: "Georgia", serif; /* Corrected font-family */
+    font-size: 18px; /* Corrected font-size */
+}
+
+/* Link Styling */
+a {
+    color: #1a73e8; /* Google blue, commonly used for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Text Size (for smaller screens like phones or tablets) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .headerfont {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
